@@ -19,3 +19,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+get('/{id}',function($id){
+	return 'sadasd........'.$id;
+})->where ('id','[0-9]+');
